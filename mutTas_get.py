@@ -38,7 +38,7 @@ br.form.set_all_readonly(False)
 br.submit()
 # # # 查看搜索结果
 brr=br.response().read()
-#是html代码，能看到火车的搜索结果
+#是html代码
 soup = BeautifulSoup(brr, features="html5lib")
 # for i,child in enumerate(soup.body.children):
 #     print(i,child)
